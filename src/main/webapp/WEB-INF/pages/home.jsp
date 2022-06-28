@@ -11,6 +11,12 @@
     <title>Title</title>
 </head>
 <body>
-hello jsp in pages
+<form action="/home">
+
+    <input type="text" name="username">
+    <input type="submit">
+
+  </form>
+Welcome<%=session.getAttribute("name")%>
 </body>
 </html>
