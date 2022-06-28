@@ -2,6 +2,7 @@ package com.example.java.and.jstl.boot;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,13 +14,12 @@ public class Controllers {
 
 @GetMapping("home")
 
-    public String show(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public ModelAndView show(String name) {
 
-    String  username = request.getParameter("name");
-    HttpSession session = request.getSession();
+    ModelAndView modelAndView =  new ModelAndView();
+    modelAndView.addObject("name",name);
+    modelAndView.setViewName("home");
 
-    session.setAttribute("name",username);
-    System.out.println("username: "+username);
-        return"home";
+        return modelAndView;
     }
 }

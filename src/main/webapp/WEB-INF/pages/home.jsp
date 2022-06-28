@@ -11,12 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/home">
+<
+Welcome ${name}
 
-    <input type="text" name="username">
-    <input type="submit">
-
-  </form>
-Welcome<%=session.getAttribute("name")%>
 </body>
 </html>
