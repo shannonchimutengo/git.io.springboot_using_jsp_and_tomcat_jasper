@@ -11,6 +11,6 @@ public class Controllers {
 @GetMapping("home")
 
     public String show(){
-        return"home.jsp";
+        return"home";
     }
 }
