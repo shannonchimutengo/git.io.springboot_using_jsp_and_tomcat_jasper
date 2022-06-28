@@ -12,5 +12,11 @@
 </head>
 <body>
 hello jsp in webapp
+<form action="/home">
+
+    <input type="text" name="username">
+    <input type="submit">
+
+</form>
 </body>
 </html>
