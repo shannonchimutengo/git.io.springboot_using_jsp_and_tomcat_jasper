@@ -19,7 +19,7 @@ public class Controllers {
     HttpSession session = request.getSession();
 
     session.setAttribute("name",username);
-    System.out.println("username");
+    System.out.println("username: "+username);
         return"home";
     }
 }
