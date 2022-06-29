@@ -12,7 +12,7 @@
 </head>
 <body>
 <
-Welcome ${name}
+Welcome ${obj.name}  ${obj.age}
 
 </body>
 </html>

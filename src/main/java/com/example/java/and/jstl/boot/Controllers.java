@@ -10,10 +10,10 @@ public class Controllers {
 
 @GetMapping("home")
 
-    public ModelAndView show(@RequestParam("username") String name) {
+    public ModelAndView show(Student student) {
 
     ModelAndView modelAndView =  new ModelAndView();
-    modelAndView.addObject("name",name);
+    modelAndView.addObject("obj",student);
     modelAndView.setViewName("home");
 
         return modelAndView;
