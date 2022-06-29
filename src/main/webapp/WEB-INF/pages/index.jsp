@@ -11,6 +11,11 @@
     <title>Title</title>
 </head>
 <body>
-welcome <%=request.getAttribute("name")%>
+<form action ="/">
+<input type="text" name="name">
+<input type="text" name="age">
+<input type="submit" >
+
+</form>
 </body>
 </html>
